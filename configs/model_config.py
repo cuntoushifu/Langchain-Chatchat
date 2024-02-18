@@ -26,11 +26,11 @@ EMBEDDING_MODEL_OUTPUT_PATH = "output"
 # 在这里，我们使用目前主流的两个离线模型，其中，chatglm3-6b 为默认加载模型。
 # 如果你的显存不足，可使用 Qwen-1_8B-Chat, 该模型 FP16 仅需 3.8G显存。
 
-LLM_MODELS = ["Qwen-14B-Chat", "Qwen-72B-Chat","chatglm3-6b"]
+LLM_MODELS = ["Qwen-14B-Chat","chatglm3-6b"]
 Agent_MODEL = None
 
 # LLM 模型运行设备。设为"auto"会自动检测(会有警告)，也可手动设定为 "cuda","mps","cpu","xpu" 其中之一。
-LLM_DEVICE = "auto"
+LLM_DEVICE = "cuda"
 
 HISTORY_LEN = 3
 

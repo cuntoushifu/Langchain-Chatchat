@@ -1,0 +1,40 @@
+2024-02-18 14:37:43 | INFO | model_worker | Loading the model ['Qwen-14B-Chat'] on worker f43cfe81 ...
+2024-02-18 14:37:43 | ERROR | stderr | Loading checkpoint shards:   0%|                                                                            | 0/15 [00:00<?, ?it/s]
+2024-02-18 14:37:44 | ERROR | stderr | Loading checkpoint shards:   7%|████▌                                                               | 1/15 [00:00<00:13,  1.03it/s]
+2024-02-18 14:37:45 | ERROR | stderr | Loading checkpoint shards:  13%|█████████                                                           | 2/15 [00:01<00:10,  1.27it/s]
+2024-02-18 14:37:46 | ERROR | stderr | Loading checkpoint shards:  20%|█████████████▌                                                      | 3/15 [00:02<00:09,  1.29it/s]
+2024-02-18 14:37:46 | ERROR | stderr | Loading checkpoint shards:  27%|██████████████████▏                                                 | 4/15 [00:03<00:07,  1.38it/s]
+2024-02-18 14:37:47 | ERROR | stderr | Loading checkpoint shards:  33%|██████████████████████▋                                             | 5/15 [00:03<00:06,  1.46it/s]
+2024-02-18 14:37:48 | ERROR | stderr | Loading checkpoint shards:  40%|███████████████████████████▏                                        | 6/15 [00:04<00:06,  1.50it/s]
+2024-02-18 14:37:48 | ERROR | stderr | Loading checkpoint shards:  47%|███████████████████████████████▋                                    | 7/15 [00:05<00:05,  1.38it/s]
+2024-02-18 14:37:49 | ERROR | stderr | Loading checkpoint shards:  53%|████████████████████████████████████▎                               | 8/15 [00:05<00:04,  1.46it/s]
+2024-02-18 14:37:50 | ERROR | stderr | Loading checkpoint shards:  60%|████████████████████████████████████████▊                           | 9/15 [00:06<00:04,  1.36it/s]
+2024-02-18 14:37:50 | ERROR | stderr | Loading checkpoint shards:  67%|████████████████████████████████████████████▋                      | 10/15 [00:07<00:03,  1.49it/s]
+2024-02-18 14:37:51 | ERROR | stderr | Loading checkpoint shards:  73%|█████████████████████████████████████████████████▏                 | 11/15 [00:07<00:02,  1.44it/s]
+2024-02-18 14:37:52 | ERROR | stderr | Loading checkpoint shards:  80%|█████████████████████████████████████████████████████▌             | 12/15 [00:08<00:01,  1.55it/s]
+2024-02-18 14:37:52 | ERROR | stderr | Loading checkpoint shards:  87%|██████████████████████████████████████████████████████████         | 13/15 [00:08<00:01,  1.62it/s]
+2024-02-18 14:37:53 | ERROR | stderr | Loading checkpoint shards:  93%|██████████████████████████████████████████████████████████████▌    | 14/15 [00:09<00:00,  1.62it/s]
+2024-02-18 14:37:53 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████| 15/15 [00:09<00:00,  1.79it/s]
+2024-02-18 14:37:53 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████| 15/15 [00:09<00:00,  1.50it/s]
+2024-02-18 14:37:53 | ERROR | stderr | 
+2024-02-18 14:37:54 | INFO | model_worker | Register to controller
+2024-02-18 14:37:54 | ERROR | stderr | Process model_worker - Qwen-14B-Chat:
+2024-02-18 14:37:54 | ERROR | stderr | Traceback (most recent call last):
+2024-02-18 14:37:54 | ERROR | stderr |   File "/home/dell/anaconda3/envs/ychatchat/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+2024-02-18 14:37:54 | ERROR | stderr |     self.run()
+2024-02-18 14:37:54 | ERROR | stderr |   File "/home/dell/anaconda3/envs/ychatchat/lib/python3.11/multiprocessing/process.py", line 108, in run
+2024-02-18 14:37:54 | ERROR | stderr |     self._target(*self._args, **self._kwargs)
+2024-02-18 14:37:54 | ERROR | stderr |   File "/usr/local/yang/Langchain-Chatchat/startup.py", line 389, in run_model_worker
+2024-02-18 14:37:54 | ERROR | stderr |     app = create_model_worker_app(log_level=log_level, **kwargs)
+2024-02-18 14:37:54 | ERROR | stderr |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-02-18 14:37:54 | ERROR | stderr |   File "/usr/local/yang/Langchain-Chatchat/startup.py", line 217, in create_model_worker_app
+2024-02-18 14:37:54 | ERROR | stderr |     worker = ModelWorker(
+2024-02-18 14:37:54 | ERROR | stderr |              ^^^^^^^^^^^^
+2024-02-18 14:37:54 | ERROR | stderr |   File "/home/dell/anaconda3/envs/ychatchat/lib/python3.11/site-packages/fastchat/serve/model_worker.py", line 102, in __init__
+2024-02-18 14:37:54 | ERROR | stderr |     self.init_heart_beat()
+2024-02-18 14:37:54 | ERROR | stderr |   File "/home/dell/anaconda3/envs/ychatchat/lib/python3.11/site-packages/fastchat/serve/base_model_worker.py", line 79, in init_heart_beat
+2024-02-18 14:37:54 | ERROR | stderr |     self.register_to_controller()
+2024-02-18 14:37:54 | ERROR | stderr |   File "/home/dell/anaconda3/envs/ychatchat/lib/python3.11/site-packages/fastchat/serve/base_model_worker.py", line 97, in register_to_controller
+2024-02-18 14:37:54 | ERROR | stderr |     assert r.status_code == 200
+2024-02-18 14:37:54 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^
+2024-02-18 14:37:54 | ERROR | stderr | AssertionError
