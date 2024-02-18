@@ -1,0 +1,6 @@
+2024-02-18 15:37:37 | INFO | model_worker | Loading the model ['Qwen-72B-Chat'] on worker 8ce71617 ...
+2024-02-18 15:37:38 | ERROR | stderr | Loading checkpoint shards:   0%|                                                                            | 0/19 [00:00<?, ?it/s]
+2024-02-18 15:38:00 | ERROR | stderr | Loading checkpoint shards:   5%|███▌                                                                | 1/19 [00:21<06:24, 21.37s/it]
+2024-02-18 15:38:10 | ERROR | stderr | Loading checkpoint shards:  11%|███████▏                                                            | 2/19 [00:31<04:14, 14.97s/it]
+2024-02-18 15:38:15 | ERROR | stderr | Loading checkpoint shards:  16%|██████████▋                                                         | 3/19 [00:36<02:47, 10.46s/it]
+2024-02-18 15:38:25 | ERROR | stderr | Loading checkpoint shards:  21%|██████████████▎                                                     | 4/19 [00:46<02:33, 10.23s/it]
