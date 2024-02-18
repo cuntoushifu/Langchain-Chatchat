@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by lei_ying (szc) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="TransportEquipmentCharacteristicCode" targetNamespace="TransportEquipmentCharacteristicCode" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--******集装箱尺寸和类型代码定义文档******-->
+	<!--请参照《中国海关舱单数据模型代码集》-->
+	<!--代码表编号：CN007。-->
+	<!--该代码最大长度：4位，由字母与数字组成。-->
+	<xs:simpleType name="TransportEquipmentCharacteristicCode">
+		<xs:annotation>
+			<xs:documentation>集装箱尺寸和类型代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="4"/>
+			<xs:pattern value="[A-Za-z0-9]{4}|[A-Za-z0-9]{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

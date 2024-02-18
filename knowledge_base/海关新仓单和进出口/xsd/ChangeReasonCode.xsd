@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="ChangeReasonCode" targetNamespace="ChangeReasonCode" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--******舱单数据变更原因代码定义文档******-->
+	<!--请参照《中国海关舱单数据模型代码集》-->
+	<!--代码表编号：CC001。-->
+	<!--该代码长度：3位，由字母与数字组成。-->
+	<xs:simpleType name="ChangeReasonCode">
+		<xs:annotation>
+			<xs:documentation>更改原因代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="3"/>
+			<xs:pattern value="([A-Za-z0-9]+)"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

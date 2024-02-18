@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by leidehua (ccic) -->
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by CENIN (CENIN) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:Declaration:datamodel:standard:CN:CAM001:1" targetNamespace="urn:Declaration:datamodel:standard:CN:CAM001:1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Type\ConveyanceDataType.xsd"/><xs:include schemaLocation="Type\DeclarationTypeCode.xsd"/><xs:include schemaLocation="Type\ShareData.xsd"/><xs:include schemaLocation="Type\MessageDefine.xsd"/><xs:include schemaLocation="Type\MessageHead.xsd"/><xs:element name="Message">
+		<xs:annotation>
+			<xs:documentation>original message,报文</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MessageHead" type="Head"/>
+				<xs:element name="MessageBody">
+					<xs:annotation>
+						<xs:documentation>Message body,报文体</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Declaration">
+								<xs:annotation>
+									<xs:documentation>航空器备案</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="airCraftRecord" type="PlaneType">
+											<xs:annotation>
+												<xs:documentation>航空器备案</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Xmlns" type="Xmlns" use="required" fixed="urn:Declaration:datamodel:standard:CN:CAM001:1">
+										<xs:annotation>
+											<xs:documentation>报文体命名空间</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="DataModelVersion" type="DataModelVersion" use="required" fixed="2">
+										<xs:annotation>
+											<xs:documentation>报文体数据元模型版本号</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Version" type="Version" use="required" fixed="1.0">
+										<xs:annotation>
+											<xs:documentation>报文体版本号</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="PlaneType">
+		<xs:sequence>
+			<xs:element name="AIRWAYS_CODE" type="wco050">
+				<xs:annotation>
+					<xs:documentation>050 Carrier identification. 航空公司代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--航空公司代码-->
+			<xs:element name="AIRWAYS_NAME_EN">
+				<xs:annotation>
+					<xs:documentation>049 Carrier - name. 英文航空公司名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="wco049">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!--英文航空公司名称-->
+			<xs:element name="AIRWAYS_NAME_CN" type="wco049">
+				<xs:annotation>
+					<xs:documentation>049 Carrier - name. 中文航空公司名称 </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--中文航空公司名称-->
+			<xs:element name="AIRCRAFT_NO" type="wco167">
+				<xs:annotation>
+					<xs:documentation>167 Identification of means of transport crossing the border, coded. 航空器注册编号</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--航空器编号-->
+			<xs:element name="AERO_MODEL" type="untded7242">
+				<xs:annotation>
+					<xs:documentation>UNTDED 7242 Model number. 机型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--机型-->
+			<xs:element name="AERO_TYPE" type="udefMissionType">
+				<xs:annotation>
+					<xs:documentation>UNTDED 1507 Designated Class. Code. 执行任务类型</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--航空器类型-->
+			<!--使用关系-->
+			<xs:element name="AERO_NATIONALITY" type="wco175">
+				<xs:annotation>
+					<xs:documentation>175 Nationality of means of transport crossing the border, coded. 航空器国籍</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--航空器国籍-->
+			<xs:element name="CERT_NO">
+				<xs:annotation>
+					<xs:documentation>UNTDED 4192 Certificate. Text. 国籍证书编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="untded4192">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!--国籍证书编号-->
+			<!--交付日期-->
+			<xs:element name="GROSS_WEIGHT" type="untded6298">
+				<xs:annotation>
+					<xs:documentation>UNTDED 6298 Vehicle laden weight. 最大起飞重量</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--总吨位-->
+			<!--净吨位-->
+			<!--载重吨位-->
+			<xs:element name="PASSENGER_LIMIT" type="wco140">
+				<xs:annotation>
+					<xs:documentation>140 Number of Passengers. 标准客舱布局载客人数</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--旅客限额-->
+			<xs:element name="USE_RELATION" type="untded8281">
+				<xs:annotation>
+					<xs:documentation>UNTDED 8281  Transport Means. Ownership.Code. 航空器所有方式</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DELIVER_DATE" type="untded2001">
+				<xs:annotation>
+					<xs:documentation>UNTDED 2001  2001 Date. Date.Date Time. 交付日期</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MEMO" type="wco105">
+				<xs:annotation>
+					<xs:documentation>105 Free text. 备注</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--备注-->
+			<xs:element name="DECLARE_TIME" type="wco022">
+				<xs:annotation>
+					<xs:documentation>022 Declaration issuing date. 申报时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!--申报时间-->
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

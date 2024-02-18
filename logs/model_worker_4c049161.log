@@ -1,0 +1,12 @@
+2024-02-18 17:24:41 | INFO | model_worker | Loading the model ['Qwen1.5-72B-Chat'] on worker 4c049161 ...
+2024-02-18 17:24:42 | ERROR | stderr | Loading checkpoint shards:   0%|                                                                                             | 0/38 [00:00<?, ?it/s]
+2024-02-18 17:24:44 | ERROR | stderr | Loading checkpoint shards:   3%|██▏                                                                                  | 1/38 [00:01<00:41,  1.12s/it]
+2024-02-18 17:24:45 | ERROR | stderr | Loading checkpoint shards:   5%|████▍                                                                                | 2/38 [00:02<00:38,  1.06s/it]
+2024-02-18 17:24:46 | ERROR | stderr | Loading checkpoint shards:   8%|██████▋                                                                              | 3/38 [00:03<00:37,  1.06s/it]
+2024-02-18 17:24:47 | ERROR | stderr | Loading checkpoint shards:  11%|████████▉                                                                            | 4/38 [00:04<00:35,  1.03s/it]
+2024-02-18 17:24:48 | ERROR | stderr | Loading checkpoint shards:  13%|███████████▏                                                                         | 5/38 [00:05<00:34,  1.04s/it]
+2024-02-18 17:24:55 | ERROR | stderr | Loading checkpoint shards:  16%|█████████████▍                                                                       | 6/38 [00:12<01:46,  3.32s/it]
+2024-02-18 17:25:04 | ERROR | stderr | Loading checkpoint shards:  18%|███████████████▋                                                                     | 7/38 [00:21<02:31,  4.90s/it]
+2024-02-18 17:25:12 | ERROR | stderr | Loading checkpoint shards:  21%|█████████████████▉                                                                   | 8/38 [00:29<03:01,  6.06s/it]
+2024-02-18 17:25:20 | ERROR | stderr | Loading checkpoint shards:  24%|████████████████████▏                                                                | 9/38 [00:37<03:12,  6.63s/it]
+2024-02-18 17:25:29 | ERROR | stderr | Loading checkpoint shards:  26%|██████████████████████                                                              | 10/38 [00:46<03:21,  7.19s/it]

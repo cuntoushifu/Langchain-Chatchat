@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by lei_ying (szc) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="AttachedTransportEquipmentCategoryCode" targetNamespace="AttachedTransportEquipmentCategoryCode" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--******设备类型代码定义文档******-->
+	<!--请参照《中国海关舱单数据模型代码集》-->
+	<!--代码定义：001-集装箱；002-车厢。-->
+	<xs:simpleType name="AttachedTransportEquipmentCategoryCode">
+		<xs:annotation>
+			<xs:documentation>UNTDED 8021 Loading tackle category 设备类型</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="3"/>
+			<xs:pattern value="([A-Za-z0-9]+)"/>
+			<xs:enumeration value="001">
+				<xs:annotation>
+					<xs:documentation>001 集装箱</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="002">
+				<xs:annotation>
+					<xs:documentation>002 车厢</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

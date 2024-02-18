@@ -33,3 +33,15 @@
 2024-02-18 15:46:33 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
 2024-02-18 15:46:33 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:20000[0m (Press CTRL+C to quit)
 2024-02-18 15:46:40 | INFO | stdout | [32mINFO[0m:     127.0.0.1:38890 - "[1mGET / HTTP/1.1[0m" [31m404 Not Found[0m
+2024-02-18 17:20:06 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m86916[0m]
+2024-02-18 17:20:06 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-02-18 17:20:06 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-02-18 17:20:06 | ERROR | stderr | [31mERROR[0m:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 20000): address already in use
+2024-02-18 17:20:06 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-02-18 17:20:06 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-02-18 17:24:41 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m98495[0m]
+2024-02-18 17:24:41 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-02-18 17:24:41 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-02-18 17:24:41 | ERROR | stderr | [31mERROR[0m:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 20000): address already in use
+2024-02-18 17:24:41 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-02-18 17:24:41 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.

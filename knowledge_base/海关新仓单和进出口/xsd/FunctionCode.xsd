@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by lei_ying (szc) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="FunctionCode" targetNamespace="FunctionCode" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--******报文功能代码定义文档******-->
+	<!--请参照《中国海关舱单数据模型代码集》-->
+	<!--对应国际标准：联合国贸易数据交换目录(UNTDED)-->
+	<!--原始舱单、预配舱单主要数据申报使用代码“9”，其他数据申报使用代码“0”，不使用代码“2”。-->
+	<xs:simpleType name="FunctionCode">
+		<xs:annotation>
+			<xs:documentation>报文功能代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="2">
+				<xs:annotation>
+					<xs:documentation>增加</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3">
+				<xs:annotation>
+					<xs:documentation>删除</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="5">
+				<xs:annotation>
+					<xs:documentation>变更</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="9">
+				<xs:annotation>
+					<xs:documentation>一次申报</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="0">
+				<xs:annotation>
+					<xs:documentation>二次申报</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="11">
+				<xs:annotation>
+					<xs:documentation>通关回执</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by TEAM ViRiLiTY (VRL) -->
+<!--<xs:complexType name="TransportEquipmentCategoryCode">
+		<xs:annotation>
+			<xs:documentation>UNTDED 8053 Transport Equipment.Category.Code 特种箱标记代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportEquipmentCategoryCode:TransportEquipmentCategoryCode"/>
+		</xs:simpleContent>
+	UNTDED 8053 Transport Equipment.Category.Code 特种箱标记代码
+	Code specifying a type of equipment.
+	填写特种箱标记代码。
+	请参照《特种箱标记代码定义文档》
+	用途：分拨和疏港分流
+	</xs:complexType>-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="Declaration" xmlns:TransportTypeCode="TransportTypeCode" xmlns:DateTimeDefine="DateTimeDefine" xmlns:CurrencyTypeCode="CurrencyTypeCode" xmlns:CountryCode="CountryCode" xmlns:PaymentMethodCode="PaymentMethodCode" xmlns:PackagingTypeCode="PackagingTypeCode" xmlns:TransportContractDocumentConditionCode="TransportContractDocumentConditionCode" xmlns:HandlingInstructionsCode="HandlingInstructionsCode" xmlns:CommunicationType="CommunicationType" xmlns:TransportEquipmentSupplierPartyTypeCode="TransportEquipmentSupplierPartyTypeCode" xmlns:TransportEquipmentFullnessCode="TransportEquipmentFullnessCode" xmlns:DamageTypeCode="DamageTypeCode" xmlns:DamageAreaCode="DamageAreaCode" xmlns:TransportEquipmentCategoryCode="TransportEquipmentCategoryCode" xmlns:ChangeReasonCode="ChangeReasonCode" xmlns:TransportSplitCode="TransportSplitCode" xmlns:PostCode="PostCode" xmlns:TransportEquipmentCharacteristicCode="TransportEquipmentCharacteristicCode" xmlns:SealAgencyCode="SealAgencyCode" xmlns:UNDGCode="UNDGCode" xmlns:CountrySubEntityCode="CountrySubEntityCode" xmlns:CustomsProcedureCode="CustomsProcedureCode" xmlns:CustomsStatusCode="CustomsStatusCode" xmlns:CustomsCode="CustomsCode" xmlns:AttachedTransportEquipmentCategoryCode="AttachedTransportEquipmentCategoryCode" xmlns:AdditionalDocumentTypeCode="AdditionalDocumentTypeCode" xmlns:OriginOriginRegionCode="OriginOriginRegionCode" xmlns:TransportEquipmentCharacteristicText="TransportEquipmentCharacteristicText" targetNamespace="Declaration" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--******中国海关进出境舱单数据元定义文档******-->
+	<!--******设备类型代码定义文档******-->
+	<xs:import namespace="AttachedTransportEquipmentCategoryCode" schemaLocation="..\Code\AttachedTransportEquipmentCategoryCode.xsd"/>
+	<!--******舱单数据变更原因代码定义文档******-->
+	<xs:import namespace="ChangeReasonCode" schemaLocation="..\Code\ChangeReasonCode.xsd"/>
+	<!--******通讯方式类别代码定义文档******-->
+	<xs:import namespace="CommunicationType" schemaLocation="..\Code\CommunicationType.xsd"/>
+	<!--******国家代码定义文档******-->
+	<xs:import namespace="CountryCode" schemaLocation="..\Code\CountryCode.xsd"/>
+	<!--******省份（地区）代码定义文档******-->
+	<xs:import namespace="CountrySubEntityCode" schemaLocation="..\Code\CountrySubEntityCode.xsd"/>
+	<!--******金额类型代码定义文档******-->
+	<xs:import namespace="CurrencyTypeCode" schemaLocation="..\Code\CurrencyTypeCode.xsd"/>
+	<!--******中国海关关区代码定义文档******-->
+	<xs:import namespace="CustomsCode" schemaLocation="..\Code\CustomsCode.xsd"/>
+	<!--******海关手续代码定义文档******-->
+	<xs:import namespace="CustomsProcedureCode" schemaLocation="..\Code\CustomsProcedureCode.xsd"/>
+	<!--******货物海关状态代码定义文档******-->
+	<xs:import namespace="CustomsStatusCode" schemaLocation="..\Code\CustomsStatusCode.xsd"/>
+	<!--******集装箱残损范围代码定义文档******-->
+	<xs:import namespace="DamageAreaCode" schemaLocation="..\Code\DamageAreaCode.xsd"/>
+	<!--******集装箱残损类型代码定义文档******-->
+	<xs:import namespace="DamageTypeCode" schemaLocation="..\Code\DamageTypeCode.xsd"/>
+	<!--******码头作业指令代码定义文档******-->
+	<xs:import namespace="HandlingInstructionsCode" schemaLocation="..\Code\HandlingInstructionsCode.xsd"/>
+	<!--******集装箱/车厢产地代码定义文档******-->
+	<xs:import namespace="OriginOriginRegionCode" schemaLocation="..\Code\OriginOriginRegionCode.xsd"/>
+	<!--******包装种类代码定义文档******-->
+	<xs:import namespace="PackagingTypeCode" schemaLocation="..\Code\PackagingTypeCode.xsd"/>
+	<!--******运费支付方法代码定义文档******-->
+	<xs:import namespace="PaymentMethodCode" schemaLocation="..\Code\PaymentMethodCode.xsd"/>
+	<!--******邮政代码定义文档******-->
+	<xs:import namespace="PostCode" schemaLocation="..\Code\PostCode.xsd"/>
+	<!--******施封人类型代码定义文档******-->
+	<xs:import namespace="SealAgencyCode" schemaLocation="..\Code\SealAgencyCode.xsd"/>
+	<!--******运输条款代码定义文档******-->
+	<xs:import namespace="TransportContractDocumentConditionCode" schemaLocation="..\Code\TransportContractDocumentConditionCode.xsd"/>
+	<!--******特种箱标记代码定义文档******-->
+	<xs:import namespace="TransportEquipmentCategoryCode" schemaLocation="..\Code\TransportEquipmentCategoryCode.xsd"/>
+	<!--******集装箱尺寸和类型代码定义文档******-->
+	<xs:import namespace="TransportEquipmentCharacteristicCode" schemaLocation="..\Code\TransportEquipmentCharacteristicCode.xsd"/>
+	<!--******车厢类型代码定义文档******-->
+	<xs:import namespace="TransportEquipmentCharacteristicText" schemaLocation="..\Code\TransportEquipmentCharacteristicText.xsd"/>
+	<!--******重箱或者空箱标识代码定义文档******-->
+	<xs:import namespace="TransportEquipmentFullnessCode" schemaLocation="..\Code\TransportEquipmentFullnessCode.xsd"/>
+	<!--******集装箱来源代码定义文档******-->
+	<xs:import namespace="TransportEquipmentSupplierPartyTypeCode" schemaLocation="..\Code\TransportEquipmentSupplierPartyTypeCode.xsd"/>
+	<!--******承运人货物分批到/发货标识代码定义文档******-->
+	<xs:import namespace="TransportSplitCode" schemaLocation="..\Code\TransportSplitCode.xsd"/>
+	<!--******运输方式代码定义文档******-->
+	<xs:import namespace="TransportTypeCode" schemaLocation="..\Code\TransportTypeCode.xsd"/>
+	<!--******联合国危险品标识代码定义文档******-->
+	<xs:import namespace="UNDGCode" schemaLocation="..\Code\UNDGCode.xsd"/>
+	<!--******日期时间格式定义文档******-->
+	<xs:import namespace="DateTimeDefine" schemaLocation="DateTimeDefine.xsd"/>
+	<!--******WCO数据元定义******-->
+	<xs:simpleType name="AdditionalDocumentIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>003 Additional document reference number 核准证号码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--003 Additional document reference number 核准证号码-->
+		<!--最大长度：35-->
+		<!--用途：暂时进出境集装箱-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignmentItemSequenceNumeric">
+		<xs:annotation>
+			<xs:documentation>006 Consignment item sequence number 商品项序号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="5"/>
+			<xs:pattern value="([A-Za-z0-9]+)"/>
+		</xs:restriction>
+		<!--006 Consignment item sequence number 商品项序号-->
+		<!--Number indicating the position in a sequence.-->
+		<!--填写提单中的商品项顺序号，每票提（运）单中的不同商品项从“1”开始按顺序填写。-->
+		<!--舱单变更时原序号不得变更。-->
+		<!--最大长度：5位，由字母和数字组成。-->
+		<!--用途：原始舱单、预配舱单、装箱清单、运抵报告-->
+	</xs:simpleType>
+	<xs:simpleType name="PreviousCustomsDocumentIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>007 Previous Customs document number 前一海关单证号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--007 Previous Customs document number 前一海关单证号-->
+		<!--The number of a previous Customs document.-->
+		<!--填写前一海关单证号码（目前不需填写）。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:complexType name="ConsignmentTransportSplitIndicator">
+		<xs:annotation>
+			<xs:documentation>011 Carrier split consignment indicator 承运人货物分批到/发货标识</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportSplitCode:TransportSplitCode"/>
+		</xs:simpleContent>
+		<!--011 Carrier split consignment indicator 承运人货物分批到/发货标识-->
+		<!--Indication assigned by the carrier for each load of a split consignment.-->
+		<!--填写货物是否分批到/发货标识。-->
+		<!--请参照《承运人货物分批到/发货标识代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装载舱单-->
+	</xs:complexType>
+	<xs:simpleType name="TransportContractDocumentIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>015 Transport document number 总提（运）单号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="[@]{0,1}([A-Z0-9]+[_*/]{0,1}[A-Z0-9]+){0,1}([A-Z0-9]+){0,1}"/>
+		</xs:restriction>
+		<!--015 Transport document number 总提（运）单号-->
+		<!--Reference number to identify a document evidencing a transport contract.-->
+		<!--水运方式填写总提单号（Master B/L）-->
+		<!--空运方式填写总运单号（Master Air Waybill）-->
+		<!--理货报告：水运方式如果件杂货进出境溢装、溢卸（没有对应提单号），总提单号为“FDCA +IMO号+航次+顺序号”-->
+		<!--理货报告：空运方式进境理货为有货无运单号的，总运单号填写“FDCA+航班号+实际到达日期+顺序号”-->
+		<!--填写内容必须由大写字母与数字组成，不能包括下划线“_”等特殊符号。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流 -->
+	</xs:simpleType>
+	<xs:simpleType name="UCRIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>016 Unique consignment reference number 唯一托运编号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--016 Unique consignment reference number 唯一托运编号-->
+		<!--Unique number assigned to goods,both for import and export.-->
+		<!--填写贸易合同签订时，按照WCO (ISO15459)产生的唯一编号。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:complexType name="LoadingLocationLoadingDate">
+		<xs:annotation>
+			<xs:documentation>031 Consignment loading date 货物装载运输工具时间/货物装载时间</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DateTimeDefine:DateTimeWithSecond"/>
+		</xs:simpleContent>
+		<!--031 Consignment loading date 货物装载运输工具时间/货物装载时间-->
+		<!--Date of initial loading onto ship or airplane during one journey from export place to import place.-->
+		<!--请参照《日期时间格式定义文档》-->
+		<!--原始舱单：填写境外计划装载时间（CCYYMMDDhhmmss）（北京时间）-->
+		<!--预配舱单、装箱清单、装载舱单：填写境内计划装载时间（CCYYMMDDhhmmss）（北京时间）-->
+		<!--最大长度：14位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单-->
+	</xs:complexType>
+	<xs:simpleType name="UNDGContactNameText">
+		<xs:annotation>
+			<xs:documentation>045 Dangerous goods contact details 危险品联系人姓名</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--045 Dangerous goods contact details 危险品联系人姓名-->
+		<!--Name [and phone number] of Dangerous goods contact person/party who can provide detailed information regarding dangerous goods.-->
+		<!--填写能够提供危险品货物详细信息的联系人姓名。-->
+		<!--最大长度：70位-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="ExitCustomsOfficeIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>047 Customs office of exit code 运输工具离境地海关代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="11"/>
+			<xs:pattern value="(([A-Za-z0-9]{5}|[A-Za-z0-9]{3})/[0-9]{2}[A-Za-z0-9]{2})|([A-Za-z0-9]{5}|[A-Za-z0-9]{3})"/>
+		</xs:restriction>
+		<!--047 Customs office of exit,coded 运输工具离境地海关代码-->
+		<!--To identify the customs office at which the goods leave or are intended to leave the customs territory of dispatch.-->
+		<!--原始舱单：只要求填写运输工具所载货物境外离境地港口代码，暂不要求填写海关代码。-->
+		<!--预配舱单：填写运输工具所载货物离境地港口代码和离境地海关代码（中间以“/”分隔）。-->
+		<!--5位国外港口代码表编号：UN009-->
+		<!--5位国内口岸代码表编号：CN003-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--4位海关关区代码表编号：CC011-->
+		<!--最大长度：11位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="CarrierNameText">
+		<xs:annotation>
+			<xs:documentation>049 Carrier name 承运人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--049 Carrier name 承运人名称-->
+		<!--Name [and address] of party providing the transport of goods between named points.-->
+		<!--填写分拨和疏港分流货物承运人名称和地址。-->
+		<!--最大长度：35位。-->
+		<!--用途：分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="CarrierIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>050 Carrier identification 承运人代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="17"/>
+			<xs:pattern value="[A-Za-z0-9]+[_/ -]{0,1}[A-Za-z0-9]+"/>
+		</xs:restriction>
+		<!--050 Carrier identification 承运人代码-->
+		<!--To identify a party providing the transport of goods between named points.-->
+		<!--水运方式填写承运人编码，承运人可以使用本公司的国际通用代码，但不得出现除“-”、“/”、“_”、“ ”之外的符号。-->
+		<!--空运方式填写航空公司IATA的2位代码。-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsigneeNameText">
+		<xs:annotation>
+			<xs:documentation>051 Consignee name 收货人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--051 Consignee name 收货人名称-->
+		<!--Name [and address] of party to which goods are consigned.-->
+		<!--填写实际收货人名称；如收货人为自然人，填写实际收货人具体人名或填写“××公司+实际收货人具体人名”；-->
+		<!--如收货人为“凭指令确定收货人（TO ORDER）”必须填写通知人数据元内容。-->
+		<!--最大长度：70位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsigneeIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>052 Consignee coded 收货人代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="128"/>
+		</xs:restriction>
+		<!--052 Consignee coded 收货人代码-->
+		<!--Identifier of party to which goods are consigned.-->
+		<!--填写实际收货人组织机构代码；收货人为自然人的填写身份证、护照号等。-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="GoodsReceiptPlaceNameText">
+		<xs:annotation>
+			<xs:documentation>054 Goods receipt place 收货地点名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--054 Goods receipt place 收货地点名称-->
+		<!--Name of the place at which the goods have been or are to be received by the consignee.-->
+		<!--填写收货地点名称，是指承运人与收货人交接货物的地点（Place of receipt）名称。-->
+		<!--收货地点代码和收货地点名称可任填其一。-->
+		<!--最大长度：70位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="GoodsReceiptPlaceIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>055 Goods receipt place code 收货地点代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="11"/>
+			<xs:pattern value="([A-Za-z0-9]+)"/>
+		</xs:restriction>
+		<!--055 Goods receipt place code 收货地点代码-->
+		<!--Identification of the place at which the goods have been or are to be received by the consignee.-->
+		<!--收货地点是指承运人与收货人交接货物的地点（Place of receipt）代码。-->
+		<!--水运方式：填写5位收货地点代码，原始舱单填写省份（地区）代码；预配舱单填写国外港口代码。-->
+		<!--空运方式：填写IATA航站代码-->
+		<!--省份（地区）代码表编号：UN001-->
+		<!--5位国外港口代码表编号：UN009-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--最大长度：11位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="NotifyPartyNameText">
+		<xs:annotation>
+			<xs:documentation>057 Notify party 通知人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--057 Notify party 通知人名称-->
+		<!--Name [and address] of party to be notified.-->
+		<!--填写通知人名称，如果收货人为 “凭指令确定收货人（TO ORDER）”必须填写通知人数据元。-->
+		<!--如通知人为自然人，填写通知人具体人名或填写“××公司+通知人具体人名”。-->
+		<!--最大长度：70位-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="NotifyPartyIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>058 Notify party code 通知人代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="128"/>
+		</xs:restriction>
+		<!--058 Notify party code 通知人代码-->
+		<!--Identification of a party to be notified.-->
+		<!--原始舱单填写通知人编码组织机构代码。-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="AgentIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>061 Agent code 运输工具代理企业代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="[A-Z0-9]+[-]{0,1}[A-Z0-9]+"/>
+		</xs:restriction>
+		<!--061 Agent code 运输工具代理企业代码-->
+		<!--Identification of a party authorized to act on behalf of another party.-->
+		<!--4位关区号+9位组织机构代码-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:complexType name="OriginOriginCountryCode">
+		<xs:annotation>
+			<xs:documentation>063 Country of origin code 原产国代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CountryCode:CountryCode"/>
+		</xs:simpleContent>
+		<!--063 Country of origin code 原产国代码-->
+		<!--To identify the country in which the goods have been produced or manufactured,according to criteria laid down for the application of the Customs tariff or quantitative restrictions,or any measure related to trade.-->
+		<!--填写按照关税条例规定的货物生产和制造国家、地区的代码。-->
+		<!--请参照《国家代码定义文档》-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:complexType name="ConsignmentRoutingCountryCode">
+		<xs:annotation>
+			<xs:documentation>064 Country(ies) of routing,coded 途经的国家代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CountryCode:CountryCode"/>
+		</xs:simpleContent>
+		<!--064 Country(ies) of routing,coded 途经的国家代码-->
+		<!--Identification of a country through which goods or passengers are routed between the country of original departure and final destination.-->
+		<!--依次填写货物自托运地至交货地所有途经国家、地区代码。-->
+		<!--水运方式：填写国家代码。-->
+		<!--空运方式填写IATA航站代码。-->
+		<!--请参照《国家代码定义文档》-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--最大长度：3位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:complexType name="DeclarationDeclarationOfficeIdentifier">
+		<xs:annotation>
+			<xs:documentation>065 Customs office of declaration,coded 申报地海关代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CustomsCode:CustomsCode"/>
+		</xs:simpleContent>
+		<!--065 Customs office of declaration,coded 申报地海关代码-->
+		<!--To identify a location at which a declaration is lodged.-->
+		<!--填报四位中国海关关区代码。-->
+		<!--请参照《中国海关关区代码定义文档》-->
+		<!--用途：装箱清单、运抵报告、理货报告-->
+	</xs:complexType>
+	<xs:complexType name="OriginOriginRegionCode">
+		<xs:annotation>
+			<xs:documentation>066 Region of origin,coded 集装箱/车厢产地代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="OriginOriginRegionCode:OriginOriginRegionCode"/>
+		</xs:simpleContent>
+		<!--066 Region of origin,coded 集装箱/车厢产地代码-->
+		<!--请参照《集装箱/车厢产地代码定义文档》-->
+		<!--用途：暂时进出境集装箱-->
+	</xs:complexType>
+	<xs:simpleType name="LoadingLocationIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>070 Place of loading code 装货地代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="25"/>
+			<xs:pattern value="[A-Z0-9]{1,11}/[0-9]{2}[A-Z0-9]{2}|[A-Z0-9]{1,11}"/>
+		</xs:restriction>
+		<!--070 Place of loading code 装货地代码-->
+		<!--To identify a seaport,airport,freight terminal,rail station or other place at which goods are loaded onto the means of transport being used for their carriage.-->
+		<!--原始舱单：装货地是指进境货物进入中国关境前最后一个装载进境运输工具的地点。-->
+		<!--原始舱单：水运方式填写国外港口代码。-->
+		<!--原始舱单：空运方式填写IATA航站代码。-->
+		<!--预配舱单：装货地是指出口货物装载出境运输工具的地点。-->
+		<!--预配舱单：水运方式填写国内口岸代码（必填）和海关关区代码（必填）（中间以“/”分隔）。-->
+		<!--预配舱单：空运方式填写IATA航站代码（必填）和海关关区代码（必填）（中间以“/”分隔）。-->
+		<!--装载舱单：水运方式填写5位国内口岸代码（必填）和4位海关关区代码（必填）（中间以“/”分隔）。-->
+		<!--装载舱单：空运方式填写IATA航站代码（必填）和海关关区代码（必填）（中间以“/”分隔）。-->
+		<!--装箱清单：填写11位监管场所代码或生产企业9位组织机构代码。-->
+		<!--理货报告：出口填写监管场所代码（必填）和海关关区代码（必填）（中间以“/”分隔）。-->
+		<!--5位国外港口代码表编号：UN009-->
+		<!--5位国内口岸代码表编号：CN003-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--4位海关关区代码表编号：CC011-->
+		<!--监管场所代码表编号：CC006-->
+		<!--根据业务规则，该数据项仅允许3、5、8、9、10、11、16位数据-->
+		<!--[A-Za-z0-9]{3}/[0-9]{2}[A-Za-z0-9]{2}|[A-Za-z0-9]{5}/[0-9]{2}[A-Za-z0-9]{2}|[A-Za-z0-9]{11}/[0-9]{2}[A-Za-z0-9]{2}|[A-Za-z0-9]{11}|[A-Za-z0-9]{9}|[A-Za-z0-9]{5}|[A-Za-z0-9]{3}-->
+		<!--最大长度：25位，最多允许出现一次“/”，并不得作为开头和结尾。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、理货报告-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignorNameText">
+		<xs:annotation>
+			<xs:documentation>071 consignor name 发货人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--071 consignor name 发货人名称-->
+		<!--Name [and address] of the party consigning goods as stipulated in the transport contract by the party ordering transport.-->
+		<!--填写发货人名称。-->
+		<!--如发货人为自然人，填写发货人具体人名或填写“××公司+发货人具体人名”。-->
+		<!--最大长度：70位-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignorIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>072 Consignor code 发货人代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="128"/>
+		</xs:restriction>
+		<!--072 Consignor code 发货人代码-->
+		<!--To identify the party consigning goods as stipulated in the transport contract by the party ordering transport.-->
+		<!--预配舱单填写发货人组织机构代码。-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="UnloadingLocationIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>080 Place of discharge code 卸货地代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="25"/>
+			<xs:pattern value="[A-Z0-9]{1,11}/[0-9]{2}[A-Z0-9]{2}|[A-Z0-9]{1,11}"/>
+		</xs:restriction>
+		<!--080 Place of discharge code 卸货地代码-->
+		<!--To identify a seaport,airport,freight terminal,rail station or other place at which goods are unloaded from the means of transport having been used for their carriage.-->
+		<!--原始舱单：水运方式填写国内口岸代码（必填）和海关关区代码（选填）（中间以“/”分隔）。-->
+		<!--原始舱单：空运方式填写IATA航站代码（必填）和海关关区代码（选填）（中间以“/”分隔）。-->
+		<!--原始舱单：如果舱单申报人填报关区代码，就将舱单分配给相应的海关；如果不填报关区代码，将舱单分配给港口代码的主管海关，如果没有主管海关舱单退单。-->
+		<!--如果原始舱单申报人填报关区代码，就将舱单分配给相应的海关；如果不填报关区代码，用港口代码对应关区代码转换。-->
+		<!--如果原始舱单一个港口对应多个关区，待确定具体的关区代码后，才允许报关。-->
+		<!--预配舱单：水运方式填写国外港口代码；空运方式填写IATA航站代码；-->
+		<!--运抵报告：填写进出口货物运抵的监管场所代码和海关关区代码（中间以“/”分隔）。-->
+		<!--理货报告：进境填写卸货地监管场所代码和海关关区代码（中间以“/”分隔），出境不填写。-->
+		<!--分拨和疏港分流：水运方式：填写进境运输工具货物卸载的国内口岸代码和海关关区代码（中间以“/”分隔）。-->
+		<!--分拨和疏港分流：空运方式：填写IATA航站代码和海关关区代码（中间以“/”分隔）。-->
+		<!--5位国外港口代码表编号：UN009-->
+		<!--5位国内口岸代码表编号：CN003-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--4位海关关区代码表编号：CC011-->
+		<!--监管场所代码表编号：CC006-->
+		<!--根据业务规则，该数据项仅允许3、5、8、10、16位数据-->
+		<!--[A-Z0-9]{3}/[0-9]{2}[A-Z0-9]{2}|[A-Z0-9]{5}/[0-9]{2}[A-Z0-9]{2}|[A-Z0-9]{11}/[0-9]{2}[A-Z0-9]{2}|[A-Za-z0-9]{5}|[A-Za-z0-9]{3}-->
+		<!--最大长度：25位，最多允许出现一次“/”，并不得作为开头和结尾。-->
+		<!--用途：原始舱单、预配舱单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="TranshipmentLocationIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>084 Transshipment place code 中转地点代码/中转启运地点代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="11"/>
+			<xs:pattern value="([A-Za-z0-9]{5}|[A-Za-z0-9]{3})"/>
+		</xs:restriction>
+		<!--084 Transshipment place code 中转地点代码/中转启运地点代码-->
+		<!--Identification of the place where goods are to be transferred from one means of transport to another during the course of one transport operation.-->
+		<!--原始舱单填写中国关境内的中转地点代码。-->
+		<!--中转地点是指进境货物自进境运输工具卸载后换装运输工具的地点。-->
+		<!--预配舱单填写中国关境内的中转地点。-->
+		<!--中转启运地点是指出境海关监管货物装载运输工具的地点（国际转运货物不填）。-->
+		<!--水运方式为国内口岸代码。-->
+		<!--空运方式填写IATA航站代码。-->
+		<!--5位国内口岸代码表编号：CN003-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--最大长度：11位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="BorderTransportMeansFirstArrivalLocationIdentifier">
+		<xs:annotation>
+			<xs:documentation>085 First port of arrival code 运输工具抵达关境内第一个目的港代码/抵达关境外第一个停靠港代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="11"/>
+			<xs:pattern value="([A-Za-z0-9]{5}|[A-Za-z0-9]{3})"/>
+		</xs:restriction>
+		<!--085 First port of arrival code 运输工具抵达关境内第一个目的港代码/抵达关境外第一个停靠港代码-->
+		<!--To identify the first arrival location.This would be a port for sea,airport for air and border post for land crossing.-->
+		<!--原始舱单：水运方式填写运输工具到达中国关境内第一个5位港口代码；空运方式填写运输工具到达中国关境内第一个航站IATA3位航站代码。-->
+		<!--预配舱单：水运方式填写运输工具到达中国关境外第一个5位港口代码；空运方式填写运输工具到达中国关境外第一个航站IATA3位航站代码。-->
+		<!--5位国外港口代码表编号：UN009-->
+		<!--5位国内口岸代码表编号：CN003-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--最大长度：11位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:complexType name="TransportContractDocumentConditionCode">
+		<xs:annotation>
+			<xs:documentation>091 Contract and carriage condition code 运输条款代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportContractDocumentConditionCode:TransportContractDocumentConditionCode"/>
+		</xs:simpleContent>
+		<!--091 Contract and carriage condition code 运输条款代码-->
+		<!--Code to identify the conditions of contract and carriage.-->
+		<!--填写运输条款代码。-->
+		<!--请参照《运输条款代码定义文档》-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:complexType name="HandlingInstructionsCodeCode">
+		<xs:annotation>
+			<xs:documentation>093 Handling instructions,coded 码头作业指令代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="HandlingInstructionsCode:HandlingInstructionsCodeCode"/>
+		</xs:simpleContent>
+		<!--093 Handling instructions,coded 码头作业指令代码-->
+		<!--To indicate directions for handling a shipment and/or delivery for a shipment.-->
+		<!--填写标识装卸船或者交付货物的方法代码。-->
+		<!--请参照《码头作业指令代码定义文档》-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:complexType name="ConsignmentCustomsStatusCode">
+		<xs:annotation>
+			<xs:documentation>094 Customs status of goods code 货物海关状态代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CustomsStatusCode:CustomsStatusCode"/>
+		</xs:simpleContent>
+		<!--094 Customs status of goods code 货物海关状态代码-->
+		<!--Status of goods as identified by customs for regulation purposes.-->
+		<!--填写中国海关规定的货物状态代码-->
+		<!--请参照《货物海关状态代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:complexType>
+	<xs:complexType name="FreightPaymentMethodCode">
+		<xs:annotation>
+			<xs:documentation>098 Transport charges method of payment code 运费支付方法代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="PaymentMethodCode:PaymentMethodCode"/>
+		</xs:simpleContent>
+		<!--098 Transport charges method of payment code 运费支付方法代码-->
+		<!--Code specifying the payment method for transport charges.-->
+		<!--填写运费支付方式代码。-->
+		<!--请参照《运费支付方法代码定义文档》-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:complexType name="TransportContractDocumentChangeReasonCode">
+		<xs:annotation>
+			<xs:documentation>099 Amendment code 更改原因代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="ChangeReasonCode:ChangeReasonCode"/>
+		</xs:simpleContent>
+		<!--099 Amendment code 更改原因代码-->
+		<!--Code specifying the reason for a change.-->
+		<!--填写更改舱单原因代码。-->
+		<!--请参照《舱单数据变更原因代码定义文档》-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:simpleType name="AdditionalInformationContentText">
+		<xs:annotation>
+			<xs:documentation>105 Free text 商品项描述补充信息/备注</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="512"/>
+		</xs:restriction>
+		<!--105 Free text 备注-->
+		<!--Free text field available to the message sender for information.-->
+		<!--留给报文发送方自由填写信息的字段。-->
+		<!--如果填写货物描述补充信息，对空运有特殊货物处理标识的，可填写IATA 3位特殊货物处理代码。-->
+		<!--最大长度：512位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignmentValueAmount">
+		<xs:annotation>
+			<xs:documentation>110 Consignment value 货物价值</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0"/>
+			<xs:totalDigits value="16"/>
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+		<!--110 Consignment value 货物价值-->
+		<!--Amount declared for customs purposes of those goods in a consignment whether or not they are subject to the same customs procedure,tariff/ statistical heading,country information and duty regime.-->
+		<!--填写金额数值，该数值是发货人向海关申报的货物价格。-->
+		<!--最大长度：最大可填写14位整数位，并可精确到小数点后两位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:complexType name="ConsignmentValue">
+		<xs:annotation>
+			<xs:documentation>110 Consignment value 货物价值（135 Currency,coded 金额类型代码）</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="ConsignmentValueAmount">
+				<xs:attribute name="CurrencyTypeCode" type="CurrencyTypeCode:CurrencyTypeCode" use="required">
+					<xs:annotation>
+						<xs:documentation>135 Currency,coded 金额类型代码</xs:documentation>
+					</xs:annotation>
+					<!--135 Currency,coded 金额类型代码-->
+					<!--Code specifying a monetary unit or currency.-->
+					<!--填写“货物价值”数据项填写的金额数值对应的货币代码-->
+					<!--请参照《金额类型代码定义文档》-->
+					<!--用途：原始舱单、预配舱单-->
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+		<!--110 Consignment value 货物价值与135 Currency,coded 金额类型代码必须成对出现。-->
+	</xs:complexType>
+	<xs:simpleType name="GoodsMeasureGrossMassMeasure">
+		<xs:annotation>
+			<xs:documentation>126 Gross weight item level 每类商品项下货物毛重</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="14"/>
+			<xs:fractionDigits value="4"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+		<!--126 Gross weight item level 每类商品项下货物毛重-->
+		<!--Weight of line item including packaging but excluding the transport equipment.-->
+		<!--填写本商品项货物的毛重（单位：千克）。-->
+		<!--空运方式分批到货，填写商品项本批次实际到/发货毛重（单位：千克）。-->
+		<!--最大长度：10位整数位，精确到小数点后4位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignmentTotalGrossMassMeasure">
+		<xs:annotation>
+			<xs:documentation>131 Total gross weight 货物总毛重</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="14"/>
+			<xs:fractionDigits value="4"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+		<!--131 Total gross weight 货物总毛重-->
+		<!--Weight (mass) of goods including packaging but excluding the carrier's equipment for a declaration.-->
+		<!--填写提（运）单货物总毛重（单位：千克），包括货物包装但不包括承运人设备重量。-->
+		<!--空运方式：原始舱单、预配舱单、出境运抵报告填写托运毛重（单位：千克），如果是分批到/发货的填写该提（运）单总毛重（单位：千克）；-->
+		<!--分拨和疏港分流、理货报告、装载舱单、分流分拨运抵报告填写实际载运该提（运）单毛重（单位：千克）。-->
+		<!--最大长度：10位整数，精确到小数点后4位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、分拨和疏港分流、理货报告、运抵报告-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignmentGrossVolumeMeasure">
+		<xs:annotation>
+			<xs:documentation>134 Cube 货物体积</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="10"/>
+			<xs:fractionDigits value="0"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+		<!--134 Cube 货物体积-->
+		<!--Measurement normally arrived at by multiplying the maximum length,width and height of pieces no package or transport equipment.Also known as cube.-->
+		<!--填写货物实际体积，体积不包括包装和运输设备。-->
+		<!--水运方式单位为立方米，空运方式为立方厘米。-->
+		<!--最大长度：10位整数。-->
+		<!--用途：原始舱单、预配舱单、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="CommodityCargoDescriptionText">
+		<xs:annotation>
+			<xs:documentation>138 Brief cargo description 商品项简要描述</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="256"/>
+		</xs:restriction>
+		<!--138 Brief cargo description 商品项简要描述-->
+		<!--Plain language description of the cargo of a means of transport,in general terms only.-->
+		<!--填写足以鉴别货物的性质的简明描述。-->
+		<!--最大长度：256位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignmentItemPackagingQuantityQuantity">
+		<xs:annotation>
+			<xs:documentation>139 Number of packages per commodity 每类商品项下货物件数</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="8"/>
+			<xs:fractionDigits value="0"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+		<!--139 Number of packages per commodity 每类商品项下货物件数-->
+		<!--Number of packages per consignment item packaged in such a way that they cannot be divided without first undoing the package.-->
+		<!--填写本商品项货物的包装数量，包装以不再拆解为准。-->
+		<!--空运分批到货，填写本批次该商品项实际到/发货件数。-->
+		<!--最大长度：8位整数。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:complexType name="PackagingTypeCode">
+		<xs:annotation>
+			<xs:documentation>141 Type of packages identification 包装种类代码/货物包装种类/托运货物包装种类</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="PackagingTypeCode:ConsignmentPackagingTypeCode"/>
+		</xs:simpleContent>
+		<!--141 Type of packages identification 包装种类代码/货物包装种类/托运货物包装种类-->
+		<!--Code specifying the type of package of an item.-->
+		<!--包装种类代码和托运货物包装种类：填写提（运）单的托运货物件数所对应的包装种类代码；-->
+		<!--货物包装种类：按照不同的货物类型填写包装种类代码；-->
+		<!--请参照《包装种类代码定义文档》-->
+		<!--用途：原始舱单，预配舱单，装载舱单、理货报告、分拨和疏港分流、装箱清单、运抵报告-->
+	</xs:complexType>
+	<xs:simpleType name="ConsignmentItemPackagingMarksNumbersText">
+		<xs:annotation>
+			<xs:documentation>142 Shipping marks 唛头</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="512"/>
+		</xs:restriction>
+		<!--142 Shipping marks 唛头-->
+		<!--Free form description of the marks and numbers on a transport unit or package.-->
+		<!--填写运输包装的标志及代码（唛头）。-->
+		<!--最大长度：512位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单、运抵报告-->
+	</xs:simpleType>
+	<xs:complexType name="CommodityUNDGCode">
+		<xs:annotation>
+			<xs:documentation>143 UNDG Number(Dangerous Goods Code) 危险品编号</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="UNDGCode:UNDGCode"/>
+		</xs:simpleContent>
+		<!--143 UNDG Number(Dangerous Goods Code) 危险品编号-->
+		<!--United Nations Dangerous Goods Identifier (UNDG) is the unique serial number assigned within the United Nations to substances and articles contained in a list of the dangerous goods most commonly carried.-->
+		<!--水运方式：填写联合国危险品标志代码。-->
+		<!--空运方式：填写IATA3位危险品英文字母代码-->
+		<!--请参照《联合国危险品标识代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:complexType>
+	<xs:simpleType name="CommodityTariffClassificationCode">
+		<xs:annotation>
+			<xs:documentation>145 Tariff code number(Customs) 海关税则编号（6位HS CODE）</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="12"/>
+			<xs:pattern value="([A-Za-z0-9]+)"/>
+		</xs:restriction>
+		<!--145 Tariff code number(Customs) 海关税则编号-->
+		<!--Code specifying a type of goods for Customs,transport,statistical or other regulatory purposes (generic term).-->
+		<!--填写6位HS商品编码。-->
+		<!--商品编码表编号：UN008。-->
+		<!--最大长度：12位，由字母和数字组成。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsignmentPackagingQuantityQuantity">
+		<xs:annotation>
+			<xs:documentation>146 Total number of packages 货物总件数</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="8"/>
+			<xs:fractionDigits value="0"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+		<!--146 Total number of packages 货物总件数-->
+		<!--Count of total number of packages of the entire declaration/ consignment.-->
+		<!--填写全部托运货物的包装件数（和提（运）单一致）。-->
+		<!--无法填报件数的裸装散货填“1”。-->
+		<!--空运方式：原始舱单、预配舱单、出境运抵报告填写该提（运）单货物总件数，如果是分批到/发货的填写该提运单总件数；-->
+		<!--分拨和疏港分流、理货报告、装载舱单、分流分拨运抵报告填写实际载运该提（运）单件数。-->
+		<!--最大长度：8位整数。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="BorderTransportMeansJourneyIdentifier">
+		<xs:annotation>
+			<xs:documentation>149 Conveyance reference number 航次航班编号/拖车牌号/车次</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="17"/>
+			<xs:pattern value="([@]{0,1})((([A-Z0-9]+)/((((1[6-9]|[2-9]\d)\d{2})(0[13578]|1[02])(0[1-9]|[12]\d|3[01]))|(((1[6-9]|[2-9]\d)\d{2})(0[13456789]|1[012])(0[1-9]|[12]\d|30))|(((1[6-9]|[2-9]\d)\d{2})02(0[1-9]|1\d|2[0-8]))|(((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))0229)))|([A-Z0-9]+))"/>
+		</xs:restriction>
+		<!--149 Conveyance reference number 航次航班编号/拖车牌号/车次-->
+		<!--To identify a journey of a means of transport,for example voyage number,flight number,trip number.-->
+		<!--水运方式：国际航行船舶填写航次号，如果船舶多次停靠同一个港口，1年内航次号不能重复。-->
+		<!--来往港澳小型船舶:12位数字的航次号-->
+		<!--进境航次的前四位为第一目的港海关关区代码（代码表编号：CC011）-->
+		<!--第五位为0-->
+		<!--第六位到第十一位为船舶从境外启航的日期，格式为（YYMMDD）（北京时间）-->
+		<!--第十二位一般为0-->
+		<!--同一船舶一天内（指当日0：00-24：00）有多个进口航次的顺次加1-->
+		<!--出境航次的前六位为船舶从第一启运港启航的日期，格式为（YYMMDD）（北京时间）-->
+		<!--第七至第十一位为0-->
+		<!--第十二位一般为0-->
+		<!--同一船舶一天内（指当日0：00-24：00）有多个出口航次的顺次加1-->
+		<!--空运方式：原始舱单填写航班号/预计到达日期（CCYYMMDD）（北京时间）；-->
+		<!--空运方式：进境理货报告、分拨和疏港分流、进境运抵报告填写航班号/实际到达日期（CCYYMMDD）（北京时间）；-->
+		<!--空运方式：预配舱单、装载舱单、出境运抵报告填写航班号/预计起飞日期（CCYYMMDD）（北京时间）；-->
+		<!--空运方式：出境理货报告填写航班号/实际起飞日期（CCYYMMDD）（北京时间）。-->
+		<!--拖车牌号/车次：填写分拨和疏港分流的运输工具名称（船舶）、运输工具牌照号（汽车）或运输工具车号（火车）。-->
+		<!--填写内容必须由大写字母与数字组成（空运方式仅允许出现一次“/”，并不得作为开头和结尾）-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:complexType name="TransportEquipmentSupplierPartyTypeCode">
+		<xs:annotation>
+			<xs:documentation>151 Equipment supplier type code 集装箱（器）来源代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportEquipmentSupplierPartyTypeCode:TransportEquipmentSupplierPartyTypeCode"/>
+		</xs:simpleContent>
+		<!--151 Equipment supplier type code 集装箱（器）来源代码-->
+		<!--Code identifying a type of party that is the supplier of transport equipment.-->
+		<!--填写集装箱来源代码，集装箱货物必须填写。-->
+		<!--请参照《集装箱来源代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:complexType>
+	<xs:complexType name="TransportEquipmentCharacteristicCode">
+		<xs:annotation>
+			<xs:documentation>152 Equipment size and type identification 集装箱（器）尺寸和类型</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportEquipmentCharacteristicCode:TransportEquipmentCharacteristicCode"/>
+		</xs:simpleContent>
+		<!--152 Equipment size and type identification 集装箱（器）尺寸和类型-->
+		<!--Code specifying the characteristics,i.e.size and type of a piece of transport equipment.-->
+		<!--填写集装箱类型代码，集装箱货物必须填写。-->
+		<!--请参照《集装箱尺寸和类型代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告-->
+	</xs:complexType>
+	<xs:simpleType name="PartyNameText">
+		<xs:annotation>
+			<xs:documentation>153 Party name(Super Class) 企业名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--153 Party name(Super Class) 企业名称-->
+		<!--最大长度：35-->
+		<!--用途：暂时进出境集装箱-->
+	</xs:simpleType>
+	<xs:complexType name="TransportEquipmentFullnessCode">
+		<xs:annotation>
+			<xs:documentation>154 Transport equipment loaded status 重箱或者空箱标识代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportEquipmentFullnessCode:TransportEquipmentFullnessCode"/>
+		</xs:simpleContent>
+		<!--154 Transport equipment loaded status 重箱或者空箱标识代码-->
+		<!--Code specifying how full a piece of transport equipment is.-->
+		<!--填写重箱或者空箱标识代码，集装箱货物必须填写。-->
+		<!--请参照《重箱或者空箱标识代码代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装载舱单、运抵报告、理货报告-->
+	</xs:complexType>
+	<xs:complexType name="BorderTransportMeansDepartureDateTime">
+		<xs:annotation>
+			<xs:documentation>156 Departure date and time 运输工具启运日期和时间</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DateTimeDefine:DateTimeWithSecond"/>
+		</xs:simpleContent>
+		<!--156 Departure date and time 运输工具启运日期和时间-->
+		<!--Date and time of departure of the means of transport.-->
+		<!--原始舱单：填写运输工具境外预计启运时间（CCYYMMDDhhmmss）（北京时间）-->
+		<!--预配舱单：填写运输工具境内预计启运时间（CCYYMMDDhhmmss）（北京时间）-->
+		<!--请参照《日期时间格式定义文档》-->
+		<!--最大长度：14位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:simpleType name="EquipmentIdentificationIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>159 Equipment identification number 集装箱（器）编号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="17"/>
+			<xs:pattern value="[A-Z0-9]+[-]{0,1}[A-Z0-9]+"/>
+		</xs:restriction>
+		<!--159 Equipment identification number 集装箱（器）编号-->
+		<!--Marks (letters and/or numbers) which identify equipment e.g.unit load device.-->
+		<!--填写集装箱（器）编号，集装箱货物必须填报。-->
+		<!--如果填写在货物详细信息段中，表示该货物装在哪个设备（集装箱）中。-->
+		<!--填写内容必须由大写字母与数字组成，只允许出现一次“-”，并不能作为开头和结尾。-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告-->
+	</xs:simpleType>
+	<xs:simpleType name="BorderTransportMeansNameText">
+		<xs:annotation>
+			<xs:documentation>160 Identification of means of transport crossing the border 运输工具名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--160 Identification of means of transport crossing the border 运输工具名称-->
+		<!--Name to identify the means of transport used in crossing the border.-->
+		<!--水运方式：使用在运输工具动态管理系统中备案的英文名称-->
+		<!--空运方式：填写IATA航空器编号或名称-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="TransportEquipmentSealIdentifier">
+		<xs:annotation>
+			<xs:documentation>165 Seal number 封志类型/号码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="([ME]/([A-Za-z0-9]+))|(0000)"/>
+		</xs:restriction>
+		<!--165 Seal number 封志类型/号码-->
+		<!--The identification number of a seal affixed to a piece of transport equipment.-->
+		<!--封志号码：填写封志类型加封志号码，中间以”/”分隔，重箱必须填写。-->
+		<!--格式为：M（机械封志）或E（电子封志）+“/”+ 封志号码。-->
+		<!--对于特种箱不能施封，但属于重箱的封志号码填写“0000”。-->
+		<!--最大长度：35位-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告-->
+	</xs:simpleType>
+	<xs:complexType name="SealNumber">
+		<xs:annotation>
+			<xs:documentation>165 Seal number 封志类型/号码（230 Seal agency,coded 施加封志人类型）</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportEquipmentSealIdentifier">
+				<xs:attribute name="AgencyCode" type="SealAgencyCode:SealAgencyCode">
+					<xs:annotation>
+						<xs:documentation>230 Seal agency,coded 施加封志人类型</xs:documentation>
+					</xs:annotation>
+					<!--230 Seal agency,coded 施加封志人类型-->
+					<!--请参照《施封人类型代码定义文档》-->
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+		<!--运抵报告、理货报告、分拨和疏港分流不需填写施加封志人。-->
+	</xs:complexType>
+	<xs:complexType name="CustomsProcedureCurrentCode">
+		<xs:annotation>
+			<xs:documentation>166 Customs procedure code 海关手续代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CustomsProcedureCode:CustomsProcedureCode"/>
+		</xs:simpleContent>
+		<!--166 Customs procedure code 海关手续代码-->
+		<!--Code specifying a procedure performed by Customs on goods which are subject to Customs control.-->
+		<!--填写货物处于海关监管之下的海关手续代码。-->
+		<!--请参照《海关手续代码定义文档》-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:simpleType name="BorderTransportMeansIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>167 Identification of means of transport crossing the border code 运输工具代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="25"/>
+			<xs:pattern value="[A-Z0-9]+"/>
+		</xs:restriction>
+		<!--167 Identification of means of transport crossing the border code 运输工具代码-->
+		<!--Identifier to identify the means of transport used in crossing the border.-->
+		<!--水运方式：国际航行船舶采用国际海事组织规定的劳氏船舶登记号的编号结构，采用9位数字和字母混合码。-->
+		<!--已在IMO登记的船舶，其前两位标识码为UN，后七位为IMO编号；-->
+		<!--未在IMO登记的船舶，其前两位表识码为CN，后七位根据国际海事组织规定的码位长度按顺序编制；-->
+		<!--来往港澳小型船舶填写海关备案管理编号；-->
+		<!--空运方式：填写IATA航空器编号。-->
+		<!--填写内容必须由大写字母与数字组成。-->
+		<!--最大长度：25位。-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:complexType name="BorderTransportMeansArrivalDateTime">
+		<xs:annotation>
+			<xs:documentation>172 Date and time of arrival at first port of arrival in Customs territory 运输工具抵达关境内第一个目的港的日期和时间/抵达关境外第一个停靠港的日期和时间</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DateTimeDefine:DateTimeWithSecond"/>
+		</xs:simpleContent>
+		<!--172 Date and time of arrival at first port of arrival in Customs territory 运输工具抵达关境内第一个目的港的日期和时间/抵达关境外第一个停靠港的日期和时间-->
+		<!--Date and time / scheduled date and time of arrival of means of transport at (for air) first airport,(land) arrival at first border post and (sea) arrival at first port,coded.-->
+		<!--原始舱单：填写运输工具预计到达中国关境内第一个港口、空港、口岸的时间（CCYYMMDDhhmmss）（北京时间）-->
+		<!--预配舱单：填写运输工具预计到达中国关境外第一个港口、空港、口岸的时间（CCYYMMDDhhmmss）（北京时间）-->
+		<!--请参照《日期时间格式定义文档》-->
+		<!--最大长度：14位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:complexType>
+	<xs:complexType name="UnloadingLocationArrivalDate">
+		<xs:annotation>
+			<xs:documentation>173 Date of arrival at place of discharge 到达卸货地日期</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DateTimeDefine:Date"/>
+		</xs:simpleContent>
+		<!--173 Date of arrival at place of discharge 到达卸货地日期-->
+		<!--Date of arrival at port or airport with intent to unload.-->
+		<!--填写到达卸货地的日期（CCYYMMDD）（北京时间）。-->
+		<!--请参照《日期时间格式定义文档》-->
+		<!--用途：原始舱单、预配舱单、运抵报告-->
+	</xs:complexType>
+	<xs:simpleType name="TransitDestinationIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>182 Place of destination of the transit code 中转目的地代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="11"/>
+			<xs:pattern value="([A-Za-z0-9]{5}|[A-Za-z0-9]{3})"/>
+		</xs:restriction>
+		<!--182 Place of destination of the transit code 中转目的地代码-->
+		<!--Identification of the place at which the goods are destined under Customs control of transit procedure.-->
+		<!--原始舱单中转目的地是指进境货物在中转地点换装运输工具后继续运往的下一目的地。-->
+		<!--预配舱单中转目的地是指出境货物在中转启运地点装载运输工具后继续运往的下一目的地。-->
+		<!--水运方式为国内口岸代码。-->
+		<!--空运方式填写IATA航站代码。-->
+		<!--5位国内口岸代码表编号：CN003-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--最大长度：11位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:complexType name="BorderTransportMeansTypeCode">
+		<xs:annotation>
+			<xs:documentation>183 Mode/type of means of transport crossing the border code 运输方式代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportTypeCode:TransportTypeCode"/>
+		</xs:simpleContent>
+		<!--183 Mode/type of means of transport crossing the border code 运输方式代码-->
+		<!--Means and mode of transport used for crossing the border,coded.-->
+		<!--请参照《运输方式代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装载舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:complexType>
+	<xs:simpleType name="AdditionalDocumentNameText">
+		<xs:annotation>
+			<xs:documentation>185 Additional Document Name 海关集装箱批准牌照</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--185 Additional Document Name 海关集装箱批准牌照-->
+		<!--最大长度：35-->
+		<!--用途：暂时进出境集装箱-->
+	</xs:simpleType>
+	<xs:simpleType name="PreviousCustomsDocumentTypeCode">
+		<xs:annotation>
+			<xs:documentation>186 Previous Customs document type code 前一海关单证类型代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="3"/>
+		</xs:restriction>
+		<!--186 Previous Customs document type code 前一海关单证类型代码-->
+		<!--Type of document used for declaration previously presented on Customs territory,coded.-->
+		<!--填写前一海关单证类型代码（目前不需填写）。-->
+		<!--最大长度：3位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="AssociatedTransportDocumentIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>189 Associated transport document number 分提（运）单号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="[@]{0,1}([A-Z0-9]+[_*/]{0,1}[A-Z0-9]+){0,1}([A-Z0-9]+){0,1}"/>
+		</xs:restriction>
+		<!--189 Associated transport document number 分提（运）单号-->
+		<!--Previous transport document number or other assigned reference number associated with the shipment.Applies to secondary cargo document report only.-->
+		<!--水运方式：由无船承运人承运的货物或集运分拨货物（Consolidation Cargo）必须填写分提单号（House B/L）。-->
+		<!--空运方式：收（发）货人为货运代理的填写分运单号（House Air Waybill）。-->
+		<!--理货报告：空运方式进境理货为有货无运单号的，分运单号填写“FDCA+航班号+实际到达日期+顺序号”-->
+		<!--填写内容必须由大写字母与数字组成，不得出现除“_”、“*”、“/”之外的其他特殊字符，特殊字符在分提（运）单号中最多出现一次，并不得作为分提（运）单号的开头和结尾。-->
+		<!--水运方式：分提（运）单在一个船次中不能重复。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单、运抵报告、理货报告、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="ConsolidatorIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>193 Consolidator,coded 拼箱人代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="18"/>
+			<xs:pattern value="[A-Z0-9]+[-]{0,1}[A-Z0-9]+"/>
+		</xs:restriction>
+		<!--193 Consolidator,coded 拼箱人代码-->
+		<!--Identification of the freight forwarder combining individual smaller consignments into a single larger shipment (so called consolidated shipment) that is sent to a counterpart who mirrors the consolidator's activity by dividing the consolidated consignment into its original components.-->
+		<!--拼箱人必须按照舱单管理办法的有关规定，事先在海关备案，该字段填写拼箱人组织机构代码。-->
+		<!--最大长度：17位，由大写字母和数字组成，只允许出现一次“-”，并不能作为开头和结尾。-->
+		<!--用途：预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="DeconsolidatorIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>195 Deconsolidator,coded 拆箱人代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="18"/>
+			<xs:pattern value="[A-Z0-9]+[-]{0,1}[A-Z0-9]+"/>
+		</xs:restriction>
+		<!--195 Deconsolidator,coded 拆箱人代码-->
+		<!--Identification of the receiving party of a consolidated shipment,who divides the latter into its original single consignments and undertakes to make them available to be delivered.-->
+		<!--拆箱人必须按照舱单管理办法的有关规定，事先在海关备案，该数据项填写拆箱人组织机构代码。-->
+		<!--最大长度：17位，由大写字母和数字组成，只允许出现一次“-”，并不能作为开头和结尾。-->
+		<!--用途：原始舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="IntermediateCarrierIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>199 Intermediate Carrier Identification 中间承运人标识</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="17"/>
+		</xs:restriction>
+		<!--199 Intermediate Carrier Identification 中间承运人标识-->
+		<!--For a transit (in-bond) movement,the identity of the carrier’s which transport the goods from consignor to exporting carrier and from importing carrier to consignee.A party providing the transport of goods between named points.-->
+		<!--填写境内承运海关监管货物的运输企业的海关注册编号。-->
+		<!--最大长度：17位。-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="GoodsConsignedPlaceIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>202 Place or country whence consigned code 货物托运的地点或者国家代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="11"/>
+			<xs:pattern value="([A-Za-z0-9]+)"/>
+		</xs:restriction>
+		<!--202 Place or country whence consigned code 货物托运的地点或者国家代码-->
+		<!--Identification of the place in country or country from which the goods were initially despatched to the importing country.-->
+		<!--填写货物托运地点或国家、地区代码，货物托运的地点是指货物交付给承运人的地点。-->
+		<!--水运方式：原始舱单填写国外港口代码；预配舱单填写省份（地区）代码。-->
+		<!--空运方式填写IATA航站代码。-->
+		<!--5位国外港口代码表编号：UN009-->
+		<!--3位IATA航站代码表编号：UN005-->
+		<!--省份（地区）代码表编号：UN001-->
+		<!--最大长度为：11位-->
+		<!--用途：原始舱单、预配舱单-->
+	</xs:simpleType>
+	<xs:simpleType name="BorderTransportMeansCargoFacilityLocationText">
+		<xs:annotation>
+			<xs:documentation>204 Cargo Facility Location name 疏港分流分拨到达地点</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="25"/>
+			<xs:pattern value="([A-Za-z0-9]+)/[0-9]{2}[A-Za-z0-9]{2}"/>
+		</xs:restriction>
+		<!--204 Cargo Facility Location name 疏港分流分拨到达地点-->
+		<!--Name of the terminal,warehouse or yard where the goods are to be offloaded.-->
+		<!--填写疏港分流分拨到达地点，填写中国海关监管场所代码和海关关区代码（中间以“/”分隔）。-->
+		<!--4位海关关区代码表编号：CC011-->
+		<!--监管场所代码表编号：CC006-->
+		<!--最大长度：25位，仅允许出现一次“/”，并不得作为开头和结尾。-->
+		<!--用途：分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="PartyIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>238 Party ID identification 理货部门代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="18"/>
+			<xs:pattern value="[A-Z0-9]+[-]{0,1}[A-Z0-9]+"/>
+		</xs:restriction>
+		<!--238 Party ID identification 理货部门代码-->
+		<!--Code specifying the identity of a party.-->
+		<!--填写理货公司组织机构代码。-->
+		<!--最大长度：17位，由大写字母和数字组成，只允许出现一次“-”，并不能作为开头和结尾。-->
+		<!--用途：理货报告-->
+	</xs:simpleType>
+	<xs:simpleType name="AddressLineText">
+		<xs:annotation>
+			<xs:documentation>239 Street and number/P.O.Box 详细地址（街道,邮箱）</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+		<!--239 Street and number/P.O.Box 详细地址（街道,邮箱）-->
+		<!--Specification of the postal delivery point such as street and number or post office box.-->
+		<!--填写实际收货人、发货人、货物交付目的地、通知人所在地地址（街道和门牌号）或者邮箱。-->
+		<!--如收货人为“凭指令确定收货人（TO ORDER）”必须填写通知人地址数据元。-->
+		<!--最大长度：70位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="CommunicationIdentificationIdentifier">
+		<xs:annotation>
+			<xs:documentation>240 Communication number 通讯方式号码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+		<!--240 Communication number 通讯方式号码-->
+		<!--填写中间承运人、收货人、收货人具体联系人、发货人、通知人、危险品联系人、理货责任人、船长/大副联系号码。-->
+		<!--最大长度：50位-->
+		<!--用途：原始舱单，预配舱单，装箱清单，理货报告-->
+	</xs:simpleType>
+	<xs:simpleType name="AddressCityNameText">
+		<xs:annotation>
+			<xs:documentation>241 City name 城市名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--241 City name 城市名称-->
+		<!--Name of a city.-->
+		<!--填写实际收货人、发货人、货物交付目的地、通知人所在地城市名称。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:complexType name="AddressCountryCode">
+		<xs:annotation>
+			<xs:documentation>242 Country code 国家代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CountryCode:CountryCode"/>
+		</xs:simpleContent>
+		<!--242 Country code 国家代码-->
+		<!--Identification of the name of the country or other geographical entity as specified in ISO 3166 and UN/ECE Rec 3.-->
+		<!--填写实际收货人、发货人、货物交付目的地、通知人所在地国家、地区代码。-->
+		<!--请参照《国家代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:complexType>
+	<xs:simpleType name="AddressCountrySubEntityNameText">
+		<xs:annotation>
+			<xs:documentation>243 Country sub-entity，name 省份名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--243 Country sub-entity，name 省份名称-->
+		<!--Name of a country subdivision.-->
+		<!--填写实际收货人、发货人、货物交付目的地、通知人所在省份名称，与省份代码可以选择填写。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:complexType name="AddressCountrySubEntityIdentifier">
+		<xs:annotation>
+			<xs:documentation>244 Country sub-entity 省份代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CountrySubEntityCode:CountrySubEntityCode"/>
+		</xs:simpleContent>
+		<!--244 Country sub-entity 省份代码-->
+		<!--Code specifying the name of a country subdivision.-->
+		<!--填写实际收货人、发货人、货物交付目的地、通知人所在省份代码，与省份名称可以选择填写。-->
+		<!--请参照《省份（地区）代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:complexType>
+	<xs:complexType name="AddressPostcodeIdentifier">
+		<xs:annotation>
+			<xs:documentation>245 Postcode identification 邮政代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="PostCode:PostCode"/>
+		</xs:simpleContent>
+		<!--245 Postcode identification 邮政代码-->
+		<!--Code specifying a postal zone or address.-->
+		<!--填写实际收货人、发货人、货物交付目的地、通知人所在地邮政编码。-->
+		<!--国外可不填邮政编码。-->
+		<!--请参照《邮政代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:complexType>
+	<xs:simpleType name="ContactNameText">
+		<xs:annotation>
+			<xs:documentation>246 Department or employee contact name 具体联系人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--246 Department or employee contact name 具体联系人名称-->
+		<!--Name of a department or employee.-->
+		<!--收货人具体联系人名称填写收货人具体联系人人名；-->
+		<!--理货责任人名称填写理货公司相关联系人具体人名；-->
+		<!--船长/大副名称填写船长/大副具体人名；-->
+		<!--中文姓名、英文姓名都可。-->
+		<!--最大长度：35位-->
+		<!--用途：原始舱单、预配舱单、装箱清单、理货报告-->
+	</xs:simpleType>
+	<xs:complexType name="CommunicationTypeIdentifier">
+		<xs:annotation>
+			<xs:documentation>253 Communication number Type 通讯方式类别代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="CommunicationType:CommunicationTypeIdentifier"/>
+		</xs:simpleContent>
+		<!--253 Communication number Type 通讯方式类别代码-->
+		<!--To identify the type of communication address.-->
+		<!--填写通讯方式类别代码。-->
+		<!--请参照《通讯方式类别代码定义文档》-->
+		<!--用途：原始舱单、预配舱单、装箱清单、理货报告-->
+	</xs:complexType>
+	<xs:simpleType name="RepresentativePersonNameText">
+		<xs:annotation>
+			<xs:documentation>256 Representative person name 舱单传输人名称/装箱清单传输人名称/监管场所经营人名称</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="[@]{0,1}[A-Za-z0-9]+[A-Za-z0-9_/ -]+[A-Za-z0-9]+"/>
+		</xs:restriction>
+		<!--256 Representative person name 舱单传输人名称/装箱清单传输人名称-->
+		<!--Name of the representative of the party making the declaration.-->
+		<!--原始舱单/预配舱单填写4位关区号＋9位组织机构代码；-->
+		<!--装箱清单填写其具体名称或组织机构代码，其具体名称或组织机构代码，但不得出现除“-”、“/”，“_”、“ ”之外的符号。-->
+		<!--最大长度：35位。-->
+		<!--用途：原始舱单、预配舱单、装箱清单-->
+	</xs:simpleType>
+	<xs:simpleType name="AEONameText">
+		<xs:annotation>
+			<xs:documentation>AEO 企业编码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+		<!--自定义 AEO 企业编码-->
+	</xs:simpleType>
+	<!--******UNTDED数据元定义******-->
+	<xs:simpleType name="TransportEquipmentReferenceIdentifier">
+		<xs:annotation>
+			<xs:documentation>UNTDED 1154 Reference.Identifier 设备交接单号/装箱单编号</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--UNTDED 1154 Reference.Identifier 设备交接单号/装箱单编号-->
+		<!--Identifies a reference.-->
+		<!--填写装箱单号码或设备交接单号。-->
+		<!--最大长度：35位。-->
+		<!--用途：装箱清单、分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:complexType name="BorderTransportMeansUnloadingDateTime">
+		<xs:annotation>
+			<xs:documentation>UNTDED 2113 Consignment.Unloading.Date Time 卸货开始时间</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DateTimeDefine:DateTimeWithSecond"/>
+		</xs:simpleContent>
+		<!--UNTDED 2113 Consignment.Unloading.Date Time 卸货开始时间-->
+		<!--Date and optionally time on which a consignment of goods will be or have been discharged or unloaded from a means of transport.-->
+		<!--填写货物自进境运输工具开始卸载的时间（CCYYMMDDhhmmss）（北京时间）。-->
+		<!--请参照《日期时间格式定义文档》-->
+		<!--最大长度：14位。-->
+		<!--用途：分拨和疏港分流、理货报告-->
+	</xs:complexType>
+	<xs:complexType name="UNTDEDDateTimeText">
+		<xs:annotation>
+			<xs:documentation>UNTDED 2380 Date/time/period 装卸开始时间/装卸结束时间/分拨和疏港分流起始时间
+</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DateTimeDefine:DateTimeWithSecond"/>
+		</xs:simpleContent>
+		<!--UNTDED 2380 Date/time/period 装卸开始时间/装卸结束时间/分拨和疏港分流起始时间-->
+		<!--The value of a date,a date and time,a time or of a period in a specified representation.-->
+		<!--装卸开始时间、装卸结束时间填写货物自进境运输工具装卸开始、结束时间（CCYYMMDDhhmmss）（北京时间）；-->
+		<!--分拨和疏港分流起始时间填写货物装载分拨和疏港分流的运输工具的起始时间（CCYYMMDDhhmmss）（北京时间）。-->
+		<!--请参照《日期时间格式定义文档》-->
+		<!--最大长度：14位-->
+		<!--用途：理货报告、分拨和疏港分流-->
+	</xs:complexType>
+	<xs:simpleType name="FreeTextCode">
+		<xs:annotation>
+			<xs:documentation>UNTDED 4441 Free Text.Code 进出场目的</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="17"/>
+		</xs:restriction>
+		<!--UNTDED 4441 Free Text.Code 进出场目的-->
+		<!--Code specifying free form text.-->
+		<!--填写进出场目的，自由描述。-->
+		<!--最大长度：17位-->
+		<!--用途：分拨和疏港分流-->
+	</xs:simpleType>
+	<xs:simpleType name="DamageTypeText">
+		<xs:annotation>
+			<xs:documentation>UNTDED 7500 Damage type description 残损类型</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--UNTDED 7500 Damage type description 残损类型-->
+		<!--Free form description of a type of damage.-->
+		<!--填写残损类型，自由描述。-->
+		<!--最大长度：35位。-->
+		<!--用途：理货报告-->
+	</xs:simpleType>
+	<xs:complexType name="DamageTypeCode">
+		<xs:annotation>
+			<xs:documentation>UNTDED 7501 Damage type description code 残损类型代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DamageTypeCode:DamageTypeCode"/>
+		</xs:simpleContent>
+		<!--UNTDED 7501 Damage type description code 残损类型代码-->
+		<!--Code specifying a type of damage.-->
+		<!--填写残损类型代码。-->
+		<!--请参照《集装箱残损类型代码定义文档》-->
+		<!--用途：理货报告-->
+	</xs:complexType>
+	<xs:simpleType name="DamageAreaText">
+		<xs:annotation>
+			<xs:documentation>UNTDED 7502 Damage area description 残损范围</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--UNTDED 7502 Damage area description 残损范围-->
+		<!--Free form description of an area of damage.-->
+		<!--填写残损范围，自由描述。-->
+		<!--最大长度：35位。-->
+		<!--用途：理货报告-->
+	</xs:simpleType>
+	<xs:complexType name="DamageAreaCode">
+		<xs:annotation>
+			<xs:documentation>UNTDED 7503 Damage area description code 残损范围代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="DamageAreaCode:DamageAreaCode"/>
+		</xs:simpleContent>
+		<!--UNTDED 7503 Damage area description code 残损范围代码-->
+		<!--Code specifying an area of damage.-->
+		<!--填写残损范围代码。-->
+		<!--请参照《集装箱残损范围代码定义文档》-->
+		<!--用途：理货报告-->
+	</xs:complexType>
+	<xs:simpleType name="DamageSeverityText">
+		<xs:annotation>
+			<xs:documentation>UNTDED 7508 Damage severity description 残损程度</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+		<!--UNTDED 7508 Damage severity description 残损程度-->
+		<!--Free form description of damage severity.-->
+		<!--填写残损程度，自由描述。-->
+		<!--最大长度：35位。-->
+		<!--用途：理货报告-->
+	</xs:simpleType>
+	<xs:complexType name="AttachedTransportEquipmentCategoryCode">
+		<xs:annotation>
+			<xs:documentation>UNTDED 8021 Loading tackle category 设备类型</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="AttachedTransportEquipmentCategoryCode:AttachedTransportEquipmentCategoryCode"/>
+		</xs:simpleContent>
+		<!--UNTDED 8021 Loading tackle category 设备类型-->
+		<!--Code specifying a type of equipment attached to another piece of transport equipment,such as loading tackle,sheets,ropes,chains.-->
+		<!--请参照《设备类型代码定义文档》-->
+		<!--用途：暂时进出境集装箱-->
+	</xs:complexType>
+	<xs:simpleType name="TransportMeansStowageLocationIdentifier">
+		<xs:annotation>
+			<xs:documentation>UNTDED 8043 Stowage place onboard,coded 船舶贝位</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+			<xs:pattern value="([A-Za-z0-9]{9}|[A-Za-z0-9]{7})"/>
+		</xs:restriction>
+		<!--UNTDED 8043 Stowage place onboard,coded 船舶贝位-->
+		<!--To identify a location on board a means of transport where specified goods or transport equipment have been or are to be stowed.-->
+		<!--集装箱货物填写装载在船舶上的贝位，贝位允许采用以下两个格式中的一种进行填写：-->
+		<!--1.ISO格式:7位编码 -->
+		<!--Bay/Row/Tier (BBBRRTT).如果贝位数字（Bay number）少于3位数则必须在开头加0补足，例如“0340210”。-->
+		<!--Hatch/Tier/Row (HHHTTRR).如果舱位数字（Hatch number）少于3位数则必须在开头加0补足。 -->
+		<!--2.Ro/Ro格式：9位编码。Deck/Bay/Row/Tier (DDBBBRRTT).-->
+		<!--分拨货物、物品和疏港分流的理货报告不填写。-->
+		<!--最大长度：35位，由字母和数字组成。。-->
+		<!--用途：理货报告-->
+	</xs:simpleType>
+	<xs:complexType name="TransportEquipmentCategoryCode">
+		<xs:annotation>
+			<xs:documentation>UNTDED 8053 Transport Equipment.Category.Code 特种箱标记代码</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportEquipmentCategoryCode:TransportEquipmentCategoryCode"/>
+		</xs:simpleContent>
+		<!--UNTDED 8053 Transport Equipment.Category.Code 特种箱标记代码-->
+		<!--Code specifying a type of equipment.-->
+		<!--填写特种箱标记代码。-->
+		<!--该数据元实际未使用。-->
+		<!--请参照《特种箱标记代码定义文档》-->
+		<!--用途：分拨和疏港分流-->
+	</xs:complexType>
+	<xs:complexType name="TransportEquipmentCharacteristicText">
+		<xs:annotation>
+			<xs:documentation>UNTDED 8154 Transport Equipment.Characteristic.Text车厢类型</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="TransportEquipmentCharacteristicText:TransportEquipmentCharacteristicText"/>
+		</xs:simpleContent>
+		<!--UNTDED 8154 Transport Equipment.Characteristic.Text车厢类型-->
+		<!--Free form description of the characteristics,I.e.size and type of a piece of transport equipment.-->
+		<!--请参照《车厢类型代码定义文档》-->
+		<!--用途：暂时进出境集装箱-->
+	</xs:complexType>
+	<xs:simpleType name="ModificationReason">
+		<xs:annotation>
+			<xs:documentation>变更原因描述</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="2048"/>
+		</xs:restriction>
+		<!--自定义 变更原因描述-->
+	</xs:simpleType>
+	<xs:simpleType name="ModificationContactName">
+		<xs:annotation>
+			<xs:documentation>变更申请联系人姓名</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+		<!--自定义 变更申请联系人姓名-->
+	</xs:simpleType>
+	<xs:simpleType name="ModificationContactTel">
+		<xs:annotation>
+			<xs:documentation>变更申请联系人电话</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+		<!--自定义 变更申请联系人电话-->
+	</xs:simpleType>
+</xs:schema>

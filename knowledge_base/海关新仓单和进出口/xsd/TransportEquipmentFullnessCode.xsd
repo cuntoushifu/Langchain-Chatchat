@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="TransportEquipmentFullnessCode" targetNamespace="TransportEquipmentFullnessCode" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--******重箱或者空箱标识代码定义文档******-->
+	<!--请参照《中国海关舱单数据模型代码集》-->
+	<!--代码表编号：CN016。-->
+	<!--该代码最大长度：1位，由字母与数字组成。-->
+	<xs:simpleType name="TransportEquipmentFullnessCode">
+		<xs:annotation>
+			<xs:documentation>重箱或者空箱标识代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="1"/>
+			<xs:pattern value="[0-9]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

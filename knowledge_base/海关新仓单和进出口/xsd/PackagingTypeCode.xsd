@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="PackagingTypeCode" targetNamespace="PackagingTypeCode" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--******包装种类代码定义文档******-->
+	<!--请参照《中国海关舱单数据模型代码集》-->
+	<!--代码表编号：CN005。-->
+	<!--该代码最大长度：2位，由字母与数字组成。-->
+	<xs:simpleType name="ConsignmentPackagingTypeCode">
+		<xs:annotation>
+			<xs:documentation>包装种类代码</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="2"/>
+			<xs:pattern value="([A-Za-z0-9]+)"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
