@@ -1,0 +1,2 @@
+2024-02-19 15:12:03 | INFO | model_worker | Register to controller
+2024-02-19 15:12:55 | ERROR | model_worker | 请求千问 API 时发生错误：{'error_code': <HTTPStatus.INTERNAL_SERVER_ERROR: 500>, 'text': 'Role must be user or assistant and Content length must be greater than 0', 'error': {'message': 'Role must be user or assistant and Content length must be greater than 0', 'type': 'invalid_request_error', 'param': None, 'code': None}}

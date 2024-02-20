@@ -1,0 +1,9 @@
+2024-02-19 12:29:46 | INFO | model_worker | Loading the model ['Qwen1.5-7B-Chat'] on worker d70ed82b ...
+2024-02-19 12:29:46 | ERROR | stderr | Loading checkpoint shards:   0%|                                                                                       | 0/4 [00:00<?, ?it/s]
+2024-02-19 12:29:47 | ERROR | stderr | Loading checkpoint shards:  25%|███████████████████▊                                                           | 1/4 [00:01<00:03,  1.29s/it]
+2024-02-19 12:29:49 | ERROR | stderr | Loading checkpoint shards:  50%|███████████████████████████████████████▌                                       | 2/4 [00:02<00:02,  1.21s/it]
+2024-02-19 12:29:50 | ERROR | stderr | Loading checkpoint shards:  75%|███████████████████████████████████████████████████████████▎                   | 3/4 [00:03<00:01,  1.21s/it]
+2024-02-19 12:29:51 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████| 4/4 [00:04<00:00,  1.10s/it]
+2024-02-19 12:29:51 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████| 4/4 [00:04<00:00,  1.15s/it]
+2024-02-19 12:29:51 | ERROR | stderr | 
+2024-02-19 12:29:51 | INFO | model_worker | Register to controller

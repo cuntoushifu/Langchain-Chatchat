@@ -49,7 +49,7 @@ BING_SUBSCRIPTION_KEY = ""
 METAPHOR_API_KEY = ""
 
 # 心知天气 API KEY，用于天气Agent。申请：https://www.seniverse.com/
-SENIVERSE_API_KEY = ""
+SENIVERSE_API_KEY = "Srv2Ycm7FSEgXvndE"
 
 # 是否开启中文标题加强，以及标题增强的相关配置
 # 通过增加标题判断，判断哪些文本为标题，并在metadata中进行标记；

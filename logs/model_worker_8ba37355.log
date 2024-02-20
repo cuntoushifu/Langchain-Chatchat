@@ -1,0 +1,2 @@
+2024-02-19 15:08:20 | INFO | model_worker | Register to controller
+2024-02-19 15:09:14 | ERROR | model_worker | 请求百川 API 时发生错误：{'error_code': 10105, 'text': 'Invalid Signature parameter in request header', 'error': {'message': 'Invalid Signature parameter in request header', 'type': 'invalid_request_error', 'param': None, 'code': None}}

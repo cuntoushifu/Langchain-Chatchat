@@ -15,7 +15,7 @@ from typing import List, Dict
 chat_box = ChatBox(
     assistant_avatar=os.path.join(
         "img",
-        "chatchat_icon_blue_square_v2.png"
+        "xjlogo2.jpg"
     )
 )
 
@@ -104,8 +104,8 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
 
     if not chat_box.chat_inited:
         st.toast(
-            f"欢迎使用 [`Langchain-Chatchat`](https://github.com/chatchat-space/Langchain-Chatchat) ! \n\n"
-            f"当前运行的模型`{default_model}`, 您可以开始提问了."
+            f"欢迎使用  ! \n\n"
+            f"智能助手为您服务."
         )
         chat_box.init_session()
 

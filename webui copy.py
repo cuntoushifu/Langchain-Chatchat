@@ -15,13 +15,13 @@ if __name__ == "__main__":
     is_lite = "lite" in sys.argv
 
     st.set_page_config(
-        "令涛硕士 WebUI",
+        "Langchain-Chatchat WebUI",
         os.path.join("img", "xjlogo2.jpg"),
         initial_sidebar_state="expanded",
         menu_items={
             'Get Help': 'https://github.com/chatchat-space/Langchain-Chatchat',
             'Report a bug': "https://github.com/chatchat-space/Langchain-Chatchat/issues",
-            'About': f"""欢迎使用 令涛硕士智能助手WebUI {VERSION}！"""
+            'About': f"""欢迎使用 Langchain-Chatchat WebUI {VERSION}！"""
         }
     )
 
@@ -40,12 +40,12 @@ if __name__ == "__main__":
         st.image(
             os.path.join(
                 "img",
-                "xjlogo.jpg"
+                "logo-long-chatchat-trans-v2.png"
             ),
             use_column_width=True
         )
         st.caption(
-            """<p align="right">当前版本：dev</p>""",
+            f"""<p align="right">当前版本：{VERSION}</p>""",
             unsafe_allow_html=True,
         )
         options = list(pages)
